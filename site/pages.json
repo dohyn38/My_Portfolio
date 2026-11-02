@@ -22,5 +22,24 @@
   "theme": [
     "template"
   ],
-  "title": "hugo-papermod"
+  "title": "hugo-papermod",
+  "menu": {
+    "main": [
+      {
+        "name": "관심 분야",
+        "pageRef": "/interests",
+        "weight": 10
+      },
+      {
+        "name": "학습 계획",
+        "pageRef": "/goals",
+        "weight": 20
+      },
+      {
+        "name": "역량과 사례",
+        "pageRef": "/skills",
+        "weight": 30
+      }
+    ]
+  }
 }
