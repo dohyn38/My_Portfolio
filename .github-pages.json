@@ -1,0 +1,13 @@
+{
+  "config": "pages.json",
+  "theme": "template",
+  "sample": null,
+  "version": "0.167.0",
+  "slug": "hugo-papermod",
+  "npm": [],
+  "asset_build": [],
+  "generator": "3.1",
+  "repo": "https://github.com/dohyn38/My_Portfolio.git",
+  "baseURL": "https://dohyn38.github.io/My_Portfolio/",
+  "audited": false
+}
