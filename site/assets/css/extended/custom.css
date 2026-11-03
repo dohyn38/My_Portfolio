@@ -408,3 +408,53 @@ body:has(.portfolio-home) .header button:focus-visible {
   border: 1px solid var(--portfolio-border);
   border-radius: 10px;
 }
+
+/* 공통 헤더: 홈과 상세 페이지의 메뉴 잘림 방지 */
+.header .header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+}
+
+.header .logo {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.header .logo > a {
+  overflow-wrap: anywhere;
+}
+
+.header .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 0;
+  max-width: 100%;
+  gap: 4px 12px;
+  overflow: visible;
+  white-space: normal;
+}
+
+.header .menu > li {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.header .menu a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .header .menu {
+    flex-basis: 100%;
+    justify-content: flex-start;
+  }
+}
