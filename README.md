@@ -300,3 +300,12 @@ Codex를 활용하여 코드 작성, 설정 설명, 오류 원인 분석과 수�
 
 보고서에는 최종 `main` 전체 SHA, 커밋 URL, 해당 Actions 실행 URL과 실제 상태, 유효 커밋 집계 근거를 기록합니다.
 
+
+### 첫 화면 배경 사진
+
+- 사용 위치: `site/static/images/hero-bg.jpg`, 홈 첫 소개 구역
+- 제작 구분: 외부 사진
+- 사진: Remy_Loz / Unsplash
+- 원본: https://unsplash.com/photos/black-laptop-computer-on-brown-wooden-table-3S0INpfREQc
+- 이용 조건: Unsplash License — https://unsplash.com/license
+- 적용 방식: 로컬 이미지 파일과 CSS 어두운 오버레이 사용. 사진 속 화면을 본인 작업물로 제시하지 않음.

@@ -458,3 +458,23 @@ body:has(.portfolio-home) .header button:focus-visible {
     justify-content: flex-start;
   }
 }
+
+/* 원목 책상 사진 위에 어두운 막을 겹쳐 제목의 대비 확보 */
+.portfolio-home .hero {
+  background-color: #332c27;
+  background-image:
+    linear-gradient(rgb(20 17 15 / 66%), rgb(20 17 15 / 74%)),
+    var(--hero-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio-home .hero h1 {
+  color: #fff;
+  text-shadow: 0 2px 16px rgb(0 0 0 / 30%);
+}
+
+.portfolio-home .hero p {
+  color: #f1eae4;
+}
