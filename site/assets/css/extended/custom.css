@@ -1,0 +1,138 @@
+/* 홈 전용: 기존 테마의 본문 너비 제한 해제 */
+body:has(.portfolio-home) .main {
+  max-width: none;
+  padding: 0;
+}
+
+.portfolio-home {
+  --portfolio-accent: #f46638;
+  --portfolio-text: #252321;
+  --portfolio-muted: #625d58;
+
+  color: var(--portfolio-text);
+  background: #fff;
+  line-height: 1.75;
+}
+
+/* 각 구역의 공통 여백 */
+.portfolio-home .portfolio-section {
+  padding: 88px max(24px, calc((100% - 1080px) / 2));
+  scroll-margin-top: 80px;
+}
+
+.portfolio-home h1,
+.portfolio-home h2,
+.portfolio-home h3 {
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+.portfolio-home h2 {
+  margin-bottom: 32px;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+}
+
+.portfolio-home h3 {
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.portfolio-home p {
+  color: var(--portfolio-muted);
+}
+
+/* 첫 소개 화면: 사진은 다음 단계에서 추가 */
+.portfolio-home .hero {
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  background: #332c27;
+  color: #fff;
+}
+
+.portfolio-home .hero h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 800;
+}
+
+.portfolio-home .hero p {
+  color: #f1eae4;
+  font-size: clamp(18px, 2vw, 22px);
+}
+
+.portfolio-home .hero a {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: var(--portfolio-accent);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.portfolio-home .hero a:hover {
+  background: #c94720;
+}
+
+.portfolio-home a:focus-visible {
+  outline: 3px solid var(--portfolio-accent);
+  outline-offset: 5px;
+}
+
+.portfolio-home .hero a:focus-visible {
+  outline-color: #fff;
+}
+
+/* 소개와 활동 구역 구분 */
+.portfolio-home #about {
+  background: #fff;
+}
+
+.portfolio-home #goals {
+  background: #f5f2ef;
+}
+
+.portfolio-home #projects {
+  background: #fff;
+}
+
+/* 카드 배치 */
+.portfolio-home .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.portfolio-home .portfolio-card {
+  min-width: 0;
+  padding: 32px;
+  border: 1px solid #e8e2dd;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(40 30 20 / 5%);
+  overflow-wrap: anywhere;
+}
+
+/* 모바일 */
+@media (max-width: 640px) {
+  .portfolio-home .portfolio-section {
+    padding: 56px 24px;
+  }
+
+  .portfolio-home .hero {
+    min-height: 440px;
+  }
+
+  .portfolio-home .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-home .portfolio-card {
+    padding: 24px;
+  }
+}
