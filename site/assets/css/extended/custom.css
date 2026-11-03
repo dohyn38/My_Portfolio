@@ -295,3 +295,29 @@ body:has(.portfolio-home) .header-nav {
   outline: 3px solid var(--portfolio-text);
   outline-offset: 4px;
 }
+/* 상단 메뉴의 조작 영역과 간격 확보 */
+body:has(.portfolio-home) .header .menu {
+  gap: 12px;
+}
+
+body:has(.portfolio-home) .header .menu a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 10px;
+}
+
+/* 마우스로 가리킨 메뉴를 색상 외에 밑줄로도 표시 */
+body:has(.portfolio-home) .header .menu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* 키보드로 선택한 링크와 버튼을 테두리로 표시 */
+body:has(.portfolio-home) .header a:focus-visible,
+body:has(.portfolio-home) .header button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: -3px;
+  border-radius: 6px;
+}
