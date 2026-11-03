@@ -22,24 +22,22 @@
   "theme": [
     "template"
   ],
-  "title": "도현 Portfolio",
-  "menu": {
-    "main": [
-      {
-        "name": "관심 분야",
-        "pageRef": "/interests",
-        "weight": 10
-      },
-      {
-        "name": "학습 계획",
-        "pageRef": "/goals",
-        "weight": 20
-      },
-      {
-        "name": "역량과 사례",
-        "pageRef": "/skills",
-        "weight": 30
-      }
-    ]
-  }
+  "title": "도현 / PORTFOLIO",
+  "main": [
+    {
+      "name": "소개",
+      "url": "/#about",
+      "weight": 10
+    },
+    {
+      "name": "관심·학습 계획",
+      "url": "/#goals",
+      "weight": 20
+    },
+    {
+      "name": "활동·역량",
+      "url": "/#projects",
+      "weight": 30
+    }
+  ]
 }

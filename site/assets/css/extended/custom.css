@@ -194,3 +194,14 @@ body:has(.portfolio-home) .main {
 .portfolio-home .hero p {
   color: #f1eae4;
 }
+/* 메뉴로 이동했을 때 제목 위에 여백 확보 */
+.portfolio-home .portfolio-section {
+  scroll-margin-top: 84px;
+}
+
+/* 움직임 감소 설정을 사용하지 않는 경우에만 부드럽게 이동 */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
