@@ -74,6 +74,13 @@
 
     <div class="portfolio-grid">
       <article class="portfolio-card">
+        {{ if fileExists "static/images/portfolio-preview.png" }}
+        <img class="project-preview"
+             src="{{ "images/portfolio-preview.png" | relURL }}"
+             alt="직접 제작한 포트폴리오 홈 화면"
+             loading="lazy"
+             decoding="async">
+        {{ end }}
         <h3>활동 1</h3>
         <div class="project-meta">
           <span>활동 기간 입력 예정</span>

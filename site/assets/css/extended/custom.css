@@ -398,3 +398,13 @@ body:has(.portfolio-home) .header button:focus-visible {
 .portfolio-home #projects .portfolio-card > p {
   margin-bottom: 24px;
 }
+
+/* 활동 결과 화면은 원래 비율을 유지하며 카드 폭에 맞춤 */
+.portfolio-home .project-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  border: 1px solid var(--portfolio-border);
+  border-radius: 10px;
+}
