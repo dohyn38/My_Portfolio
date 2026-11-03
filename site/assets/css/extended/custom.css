@@ -229,3 +229,46 @@ body:has(.portfolio-home) .header-nav {
     scroll-margin-top: 144px;
   }
 }
+.portfolio-home .section-label {
+  margin-bottom: 12px;
+  color: var(--portfolio-accent);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.portfolio-home .section-description {
+  max-width: 680px;
+  margin-bottom: 36px;
+}
+
+.portfolio-home .about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.portfolio-home .about-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  background: #fff0e8;
+  color: #a93612;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+:root[data-theme="dark"] .portfolio-home .about-number {
+  background: #492d24;
+  color: #ffb394;
+}
+
+@media (max-width: 900px) {
+  .portfolio-home .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
