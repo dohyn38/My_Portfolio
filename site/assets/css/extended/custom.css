@@ -272,3 +272,26 @@ body:has(.portfolio-home) .header-nav {
     grid-template-columns: 1fr;
   }
 }
+.portfolio-home .section-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.portfolio-home .section-navigation a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border: 1px solid var(--portfolio-muted);
+  border-radius: 999px;
+  color: var(--portfolio-text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.portfolio-home .section-navigation a:focus-visible {
+  outline: 3px solid var(--portfolio-text);
+  outline-offset: 4px;
+}
