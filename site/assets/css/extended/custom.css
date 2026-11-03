@@ -136,3 +136,61 @@ body:has(.portfolio-home) .main {
     padding: 24px;
   }
 }
+/* 홈의 밝은 모드 색상 */
+.portfolio-home {
+  --portfolio-bg: #ffffff;
+  --portfolio-section-bg: #f5f2ef;
+  --portfolio-card-bg: #ffffff;
+  --portfolio-border: #e8e2dd;
+  --portfolio-text: #252321;
+  --portfolio-muted: #625d58;
+  --portfolio-shadow: 0 8px 24px rgb(40 30 20 / 5%);
+
+  background: var(--portfolio-bg);
+  color: var(--portfolio-text);
+}
+
+/* 테마 전환 버튼과 연동되는 어두운 모드 색상 */
+:root[data-theme="dark"] .portfolio-home {
+  --portfolio-bg: #1d1e20;
+  --portfolio-section-bg: #242528;
+  --portfolio-card-bg: #2c2d31;
+  --portfolio-border: #414247;
+  --portfolio-text: #f0eeeb;
+  --portfolio-muted: #c2bfbb;
+  --portfolio-shadow: 0 8px 24px rgb(0 0 0 / 15%);
+}
+
+/* 구역과 카드에 모드별 색상 적용 */
+.portfolio-home #about,
+.portfolio-home #projects {
+  background: var(--portfolio-bg);
+}
+
+.portfolio-home #goals {
+  background: var(--portfolio-section-bg);
+}
+
+.portfolio-home .portfolio-card {
+  background: var(--portfolio-card-bg);
+  border-color: var(--portfolio-border);
+  box-shadow: var(--portfolio-shadow);
+}
+
+.portfolio-home h2,
+.portfolio-home h3 {
+  color: var(--portfolio-text);
+}
+
+.portfolio-home p {
+  color: var(--portfolio-muted);
+}
+
+/* 첫 소개 화면은 두 모드에서 밝은 글자 유지 */
+.portfolio-home .hero {
+  color: #ffffff;
+}
+
+.portfolio-home .hero p {
+  color: #f1eae4;
+}
