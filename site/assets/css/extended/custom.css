@@ -478,3 +478,88 @@ body:has(.portfolio-home) .header button:focus-visible {
 .portfolio-home .hero p {
   color: #f1eae4;
 }
+
+/* ABOUT ME 소개와 GitHub 프로필 카드 */
+.portfolio-home .about-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
+  align-items: center;
+  gap: 32px;
+}
+
+.portfolio-home .about-copy {
+  min-width: 0;
+}
+
+.portfolio-home .about-copy .section-description {
+  margin-bottom: 0;
+}
+
+.portfolio-home .github-profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--portfolio-border);
+  border-radius: 20px;
+  background: var(--portfolio-card-bg);
+  color: var(--portfolio-text);
+  text-decoration: none;
+  box-shadow: var(--portfolio-shadow);
+}
+
+.portfolio-home .github-card-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.portfolio-home .github-card-icon,
+.portfolio-home .github-card-icon svg {
+  display: block;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.portfolio-home .github-card-url {
+  color: #0969da;
+  font-size: 17px;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+:root[data-theme="dark"] .portfolio-home .github-card-url {
+  color: #79b8ff;
+}
+.portfolio-home .github-card-description {
+  color: var(--portfolio-muted);
+  font-size: 15px;
+}
+
+.portfolio-home .github-profile-card:hover {
+  border-color: var(--portfolio-accent);
+}
+
+.portfolio-home .github-profile-card:focus-visible {
+  outline: 3px solid var(--portfolio-text);
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .portfolio-home .about-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .portfolio-home .github-profile-card {
+    max-width: 360px;
+  }
+}
