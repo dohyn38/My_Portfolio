@@ -362,3 +362,22 @@ body:has(.portfolio-home) .header button:focus-visible {
   max-width: 100%;
   white-space: normal;
 }
+
+/* 활동 기간과 진행 상태 */
+.portfolio-home .project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin: 12px 0 20px;
+  color: var(--portfolio-muted);
+  font-size: 14px;
+}
+
+.portfolio-home .project-status {
+  padding: 3px 10px;
+  border: 1px solid var(--portfolio-muted);
+  border-radius: 999px;
+  color: var(--portfolio-text);
+  font-weight: 600;
+}
