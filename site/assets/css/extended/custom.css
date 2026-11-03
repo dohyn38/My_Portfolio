@@ -321,3 +321,20 @@ body:has(.portfolio-home) .header button:focus-visible {
   outline-offset: -3px;
   border-radius: 6px;
 }
+.portfolio-home .project-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 20px;
+  padding: 8px 0;
+  color: var(--portfolio-text);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.portfolio-home .project-link:focus-visible {
+  outline: 3px solid var(--portfolio-text);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
