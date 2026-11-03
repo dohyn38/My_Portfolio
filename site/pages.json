@@ -1,5 +1,7 @@
 {
   "baseURL": "https://dohyn38.github.io/My_Portfolio/",
+  "languageCode": "ko-KR",
+  "defaultContentLanguage": "ko",
   "enableGitInfo": false,
   "themesDir": "themes",
   "timeout": "120s",
