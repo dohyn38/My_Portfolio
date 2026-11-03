@@ -6,9 +6,9 @@ Hugo와 PaperMod 테마를 기반으로 제작 중인 개인 포트폴리오입�
 
 
 
-\- 공개 사이트: https://dohyn38.github.io/My\_Portfolio/
+\- 공개 사이트: https://dohyn38.github.io/My_Portfolio/
 
-\- 저장소: https://github.com/dohyn38/My\_Portfolio
+\- 저장소: https://github.com/dohyn38/My_Portfolio
 
 
 
