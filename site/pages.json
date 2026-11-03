@@ -23,21 +23,23 @@
     "template"
   ],
   "title": "도현 / PORTFOLIO",
-  "main": [
-    {
-      "name": "소개",
-      "url": "/#about",
-      "weight": 10
-    },
-    {
-      "name": "관심·학습 계획",
-      "url": "/#goals",
-      "weight": 20
-    },
-    {
-      "name": "활동·역량",
-      "url": "/#projects",
-      "weight": 30
-    }
-  ]
+  "menu" :{
+    "main": [
+      {
+        "name": "소개",
+        "url": "/#about",
+        "weight": 10
+      },
+      {
+        "name": "관심·학습 계획",
+        "url": "/#goals",
+        "weight": 20
+      },
+      {
+        "name": "활동·역량",
+        "url": "/#projects",
+        "weight": 30
+      }
+    ]
+  }
 }
