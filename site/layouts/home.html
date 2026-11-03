@@ -12,22 +12,26 @@
   <section id="about" class="portfolio-section"
          tabindex="-1" aria-labelledby="about-title">
   <p class="section-label">01 / ABOUT ME</p>
-  <div class="about-heading">
-    <h2 id="about-title">안녕하세요! 김도현입니다.
-      <a class="about-github" style="display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;margin-left:8px;width:28px;height:28px;line-height:1"
-     href="https://github.com/dohyn38"
-     aria-label="김도현 GitHub 프로필로 이동"
-     title="GitHub 프로필 보기">
-    <span aria-hidden="true">{{ partial "svg.html" (dict "name" "github") | replaceRE "<svg " "<svg width=\"22\" height=\"22\" style=\"width:22px;height:22px;max-width:22px;display:block\" " | safeHTML }}</span>
-  </a>
-    </h2>
-  </div>
-  <p class="section-description">
-    전북대학교에서 컴퓨터공학을 공부하며 웹 개발의 기초를 배우고 있습니다.<br>
-    직접 만들고 문제를 해결하는 과정을 통해 경험을 쌓고,<br>
-    배운 내용을 꾸준히 기록하고 있습니다.
-  </p>
+  <div class="about-layout">
+    <div class="about-copy">
+      <h2 id="about-title">안녕하세요! 김도현입니다.</h2>
+      <p class="section-description">
+        전북대학교에서 컴퓨터공학을 공부하며 웹 개발의 기초를 배우고 있습니다.<br>
+        직접 만들고 문제를 해결하는 과정을 통해 경험을 쌓고,<br>
+        배운 내용을 꾸준히 기록하고 있습니다.
+      </p>
+    </div>
 
+    <a class="github-profile-card" href="https://github.com/dohyn38"
+       aria-label="김도현 GitHub 프로필 보기">
+      <span class="github-card-brand">
+        <span class="github-card-icon" aria-hidden="true">{{ partial "svg.html" (dict "name" "github") | replaceRE "<svg " "<svg width=\"40\" height=\"40\" style=\"width:40px;height:40px;display:block\" " | safeHTML }}</span>
+        <span>GitHub</span>
+      </span>
+      <span class="github-card-url">github.com/dohyn38</span>
+      <span class="github-card-description">소스 코드와 학습 기록</span>
+    </a>
+  </div>
   <nav class="section-navigation" aria-label="소개 다음 이동">
     <a href="#goals">학습 계획 보기 ↓</a>
   </nav>
