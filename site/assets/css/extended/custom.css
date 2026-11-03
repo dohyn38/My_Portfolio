@@ -484,7 +484,7 @@ body:has(.portfolio-home) .header button:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
   align-items: center;
-  gap: 32px;
+  gap: 20px;
 }
 
 .portfolio-home .about-copy {

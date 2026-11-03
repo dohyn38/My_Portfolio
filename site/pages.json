@@ -24,21 +24,21 @@
   "theme": [
     "template"
   ],
-  "title": "도현 / PORTFOLIO",
+  "title": "DOHYEON / PORTFOLIO",
   "menu" :{
     "main": [
       {
-        "name": "소개",
+        "name": "ABOUT ME",
         "url": "/#about",
         "weight": 10
       },
       {
-        "name": "관심·학습 계획",
+        "name": "INTERESTS & GOALS",
         "url": "/#goals",
         "weight": 20
       },
       {
-        "name": "활동·역량",
+        "name": "PROJECTS",
         "url": "/#projects",
         "weight": 30
       }
