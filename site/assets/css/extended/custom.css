@@ -381,3 +381,20 @@ body:has(.portfolio-home) .header button:focus-visible {
   color: var(--portfolio-text);
   font-weight: 600;
 }
+/* 활동 카드의 내용을 세로로 배치 */
+.portfolio-home #projects .portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 카드마다 설명 길이가 달라도 링크는 아래쪽에 배치 */
+.portfolio-home #projects .project-link {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+/* 설명과 카드 하단 사이의 간격 확보 */
+.portfolio-home #projects .portfolio-card > p {
+  margin-bottom: 24px;
+}
