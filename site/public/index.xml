@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Welcome 안녕 on DOHYEON / PORTFOLIO</title>
+    <link>http://localhost:1313/My_Portfolio/</link>
+    <description>Recent content in Welcome 안녕 on DOHYEON / PORTFOLIO</description>
+    <generator>Hugo</generator>
+    <language>ko-KR</language>
+    <atom:link href="http://localhost:1313/My_Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>관심 분야와 선택 이유</title>
+      <link>http://localhost:1313/My_Portfolio/interests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/My_Portfolio/interests/</guid>
+      <description>&lt;h2 id=&#34;관심-분야&#34;&gt;관심 분야&lt;/h2&gt;
+&lt;p&gt;[관심 있는 분야를 작성하세요.]&lt;/p&gt;
+&lt;h2 id=&#34;선택-이유&#34;&gt;선택 이유&lt;/h2&gt;
+&lt;p&gt;[이 분야에 관심을 갖게 된 계기와 배우고 싶은 이유를 작성하세요.]&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/My_Portfolio/&#34;&gt;홈으로 돌아가기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>역량과 적용 사례</title>
+      <link>http://localhost:1313/My_Portfolio/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/My_Portfolio/skills/</guid>
+      <description>&lt;h2 id=&#34;보유-역량&#34;&gt;보유 역량&lt;/h2&gt;
+&lt;p&gt;[사용할 수 있는 도구나 기술과 실제 수행할 수 있는 작업을 작성하세요.]&lt;/p&gt;
+&lt;h2 id=&#34;적용-사례&#34;&gt;적용 사례&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;활동 이름: [실제로 참여하거나 수행한 활동]&lt;/li&gt;
+&lt;li&gt;활동 시기와 진행 상태: [활동 기간 / 진행 중 또는 완료]&lt;/li&gt;
+&lt;li&gt;활동 목적: [이 활동을 한 이유]&lt;/li&gt;
+&lt;li&gt;본인 역할과 기여: [직접 담당한 부분]&lt;/li&gt;
+&lt;li&gt;수행 과정과 선택 이유: [사용한 기술과 방법, 선택한 이유]&lt;/li&gt;
+&lt;li&gt;산출물과 결과: [만든 결과물 설명과 관련 링크]&lt;/li&gt;
+&lt;li&gt;배운 점과 개선 방향: [배운 내용과 앞으로 개선할 부분]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/My_Portfolio/&#34;&gt;홈으로 돌아가기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>포트폴리오 웹사이트 제작</title>
+      <link>http://localhost:1313/My_Portfolio/projects/portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/My_Portfolio/projects/portfolio/</guid>
+      <description>&lt;h2 id=&#34;활동-개요&#34;&gt;활동 개요&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;활동 기간: 작성 예정&lt;/li&gt;
+&lt;li&gt;진행 상태: 작성 예정&lt;/li&gt;
+&lt;li&gt;활동 목적: 작성 예정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;사용-기술과-적용&#34;&gt;사용 기술과 적용&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;사용한 기술과 도구: 작성 예정&lt;/li&gt;
+&lt;li&gt;실제 활용한 부분: 작성 예정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;본인-역할&#34;&gt;본인 역할&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;개인 활동 또는 팀 활동 구분: 작성 예정&lt;/li&gt;
+&lt;li&gt;직접 담당한 작업과 기여 범위: 작성 예정&lt;/li&gt;
+&lt;li&gt;AI 도움을 받은 부분과 본인이 판단한 부분: 작성 예정&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;수행-과정과-선택-이유&#34;&gt;수행 과정과 선택 이유&lt;/h2&gt;
+&lt;h3 id=&#34;주요-수행-단계&#34;&gt;주요 수행 단계&lt;/h3&gt;
+&lt;p&gt;작성 예정&lt;/p&gt;
+&lt;h3 id=&#34;도구와-구현-방식의-선택-이유&#34;&gt;도구와 구현 방식의 선택 이유&lt;/h3&gt;
+&lt;p&gt;작성 예정&lt;/p&gt;
+&lt;h2 id=&#34;결과물&#34;&gt;결과물&lt;/h2&gt;
+&lt;h3 id=&#34;구현-결과-설명&#34;&gt;구현 결과 설명&lt;/h3&gt;
+&lt;p&gt;작성 예정&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>학습 목표와 실행 계획</title>
+      <link>http://localhost:1313/My_Portfolio/goals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/My_Portfolio/goals/</guid>
+      <description>&lt;h2 id=&#34;학습-목표&#34;&gt;학습 목표&lt;/h2&gt;
+&lt;p&gt;[무엇을 언제까지 할 수 있게 되고 싶은지 작성하세요.]&lt;/p&gt;
+&lt;h2 id=&#34;실행-계획&#34;&gt;실행 계획&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;학습 기간: [시작일과 목표 완료일]&lt;/li&gt;
+&lt;li&gt;학습 내용: [배울 내용과 사용할 자료]&lt;/li&gt;
+&lt;li&gt;실천 방법: [매주 할 작업과 학습 시간]&lt;/li&gt;
+&lt;li&gt;목표 결과물: [제작할 결과물과 달성 여부를 확인할 방법]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/My_Portfolio/&#34;&gt;홈으로 돌아가기&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

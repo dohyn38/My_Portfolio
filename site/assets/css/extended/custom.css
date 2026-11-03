@@ -482,7 +482,7 @@ body:has(.portfolio-home) .header button:focus-visible {
 /* ABOUT ME 소개와 GitHub 프로필 카드 */
 .portfolio-home .about-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
+  grid-template-columns: minmax(0, 600px) minmax(240px, 300px);
   align-items: center;
   gap: 20px;
 }
