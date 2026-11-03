@@ -14,11 +14,11 @@
   <p class="section-label">01 / ABOUT ME</p>
   <div class="about-heading">
     <h2 id="about-title">안녕하세요! 김도현입니다.</h2>
-    <a class="about-github"
+    <a class="about-github" style="display:inline-flex;align-items:center;justify-content:center;flex:0 0 32px;width:32px;height:32px"
      href="https://github.com/dohyn38"
      aria-label="김도현 GitHub 프로필로 이동"
      title="GitHub 프로필 보기">
-    <span aria-hidden="true">{{ partial "svg.html" (dict "name" "github") }}</span>
+    <span aria-hidden="true">{{ partial "svg.html" (dict "name" "github") | replaceRE "<svg " "<svg width=\"22\" height=\"22\" style=\"width:22px;height:22px;max-width:22px;display:block\" " | safeHTML }}</span>
   </a>
   </div>
   <p class="section-description">
