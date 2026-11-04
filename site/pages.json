@@ -32,6 +32,7 @@
     ]
   },
   "params": {
+    "defaultTheme": "dark",
     "assets": {
       "favicon": "favicon.svg"
     }

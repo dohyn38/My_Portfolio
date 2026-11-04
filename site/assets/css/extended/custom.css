@@ -152,13 +152,13 @@ body:has(.portfolio-home) .main {
 
 /* 테마 전환 버튼과 연동되는 어두운 모드 색상 */
 :root[data-theme="dark"] .portfolio-home {
-  --portfolio-bg: #1d1e20;
-  --portfolio-section-bg: #242528;
-  --portfolio-card-bg: #2c2d31;
-  --portfolio-border: #414247;
-  --portfolio-text: #f0eeeb;
-  --portfolio-muted: #c2bfbb;
-  --portfolio-shadow: 0 8px 24px rgb(0 0 0 / 15%);
+  --portfolio-bg: #292c30;
+  --portfolio-section-bg: #303338;
+  --portfolio-card-bg: #373b40;
+  --portfolio-border: #4b5057;
+  --portfolio-text: #f1eee9;
+  --portfolio-muted: #c7c7c5;
+  --portfolio-shadow: 0 8px 24px rgb(13 16 20 / 10%);
 }
 
 /* 구역과 카드에 모드별 색상 적용 */
@@ -659,4 +659,24 @@ body:has(.portfolio-home) .header button:focus-visible {
 }
 @media (max-width: 600px) {
   .portfolio-about #about { padding-top: 40px; }
+}
+
+/* 공통 다크 색상 */
+:root[data-theme="dark"] {
+  --theme: #292c30;
+  --entry: #373b40;
+  --primary: #f1eee9;
+  --secondary: #c7c7c5;
+  --tertiary: #4b5057;
+  --content: #deddd9;
+  --code-block-bg: #24272b;
+  --code-bg: #33373c;
+  --border: #4b5057;
+}
+:root[data-theme="dark"] .portfolio-home:not(.portfolio-about) #projects {
+  background: var(--portfolio-section-bg);
+}
+:root:not([data-theme="dark"]) .portfolio-home:not(.portfolio-about) #projects {
+  background: #f7f5f2;
+  border-top: 1px solid #eee9e3;
 }
