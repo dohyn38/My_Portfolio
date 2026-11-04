@@ -12,61 +12,9 @@
     </nav>
   </section>
 
-  <section id="about" class="portfolio-section"
-         tabindex="-1" aria-labelledby="about-title">
-  <p class="section-label">01 / ABOUT ME</p>
-  <div class="about-layout">
-    <div class="about-copy">
-      <h2 id="about-title">안녕하세요! 김도현입니다.</h2>
-      <p class="section-description">
-        전북대학교에서 컴퓨터공학을 공부하며 웹 개발의 기초를 배우고 있습니다.<br>
-        직접 만들고 문제를 해결하는 과정을 통해 경험을 쌓고,<br>
-        배운 내용을 꾸준히 기록하고 있습니다.
-      </p>
-    </div>
-
-    <a class="github-profile-card" href="https://github.com/dohyn38"
-       aria-label="김도현 GitHub 프로필 보기">
-      <span class="github-card-brand">
-        <span class="github-card-icon" aria-hidden="true">{{ partial "svg.html" (dict "name" "github") | replaceRE "<svg " "<svg width=\"40\" height=\"40\" style=\"width:40px;height:40px;display:block\" " | safeHTML }}</span>
-        <span>GitHub</span>
-      </span>
-      <span class="github-card-url">github.com/dohyn38</span>
-      <span class="github-card-description">소스 코드와 학습 기록</span>
-    </a>
-  </div>
-  <nav class="section-navigation" aria-label="소개 다음 이동">
-    <a href="#goals">학습 계획 보기 ↓</a>
-  </nav>
-</section>
-
-  <section id="goals" class="portfolio-section"
-           tabindex="-1" aria-labelledby="goals-title">
-    <p class="section-label">02 / INTERESTS &amp; GOALS</p>
-    <h2 id="goals-title">관심과 학습 계획</h2>
-    <p class="section-description">
-      관심 있는 분야와 앞으로의 학습 방향을 정리하는 공간입니다.
-    </p>
-
-    <div class="portfolio-grid">
-      <article class="portfolio-card">
-        <h3>관심 분야</h3>
-        <p>관심 분야와 선택 이유가 들어갈 공간입니다.</p>
-      </article>
-
-      <article class="portfolio-card">
-        <h3>학습 계획</h3>
-        <p>학습 목표와 실행 계획이 들어갈 공간입니다.</p>
-      </article>
-    </div>
-  <nav class="section-navigation" aria-label="학습 계획 다음 이동">
-    <a href="#projects">활동 보기 ↓</a>
-  </nav>
-  </section>
-
   <section id="projects" class="portfolio-section"
            tabindex="-1" aria-labelledby="projects-title">
-    <p class="section-label">03 / PROJECTS</p>
+    <p class="section-label">01 / PROJECTS</p>
     <h2 id="projects-title">활동과 프로젝트</h2>
     <p class="section-description">
       직접 수행한 활동과 결과물을 정리하는 공간입니다.
@@ -109,6 +57,58 @@
       </article>
     </div>
   <nav class="section-navigation" aria-label="활동 이후 이동">
+    <a href="#about">About Me 보기 ↓</a>
+  </nav>
+  </section>
+
+  <section id="about" class="portfolio-section"
+         tabindex="-1" aria-labelledby="about-title">
+  <p class="section-label">02 / ABOUT ME</p>
+  <div class="about-layout">
+    <div class="about-copy">
+      <h2 id="about-title">안녕하세요! 김도현입니다.</h2>
+      <p class="section-description">
+        전북대학교에서 컴퓨터공학을 공부하며 웹 개발의 기초를 배우고 있습니다.<br>
+        직접 만들고 문제를 해결하는 과정을 통해 경험을 쌓고,<br>
+        배운 내용을 꾸준히 기록하고 있습니다.
+      </p>
+    </div>
+
+    <a class="github-profile-card" href="https://github.com/dohyn38"
+       aria-label="김도현 GitHub 프로필 보기">
+      <span class="github-card-brand">
+        <span class="github-card-icon" aria-hidden="true">{{ partial "svg.html" (dict "name" "github") | replaceRE "<svg " "<svg width=\"40\" height=\"40\" style=\"width:40px;height:40px;display:block\" " | safeHTML }}</span>
+        <span>GitHub</span>
+      </span>
+      <span class="github-card-url">github.com/dohyn38</span>
+      <span class="github-card-description">소스 코드와 학습 기록</span>
+    </a>
+  </div>
+  <nav class="section-navigation" aria-label="소개 다음 이동">
+    <a href="#goals">학습 계획 보기 ↓</a>
+  </nav>
+</section>
+
+  <section id="goals" class="portfolio-section"
+           tabindex="-1" aria-labelledby="goals-title">
+    <p class="section-label">03 / INTERESTS &amp; GOALS</p>
+    <h2 id="goals-title">관심과 학습 계획</h2>
+    <p class="section-description">
+      관심 있는 분야와 앞으로의 학습 방향을 정리하는 공간입니다.
+    </p>
+
+    <div class="portfolio-grid">
+      <article class="portfolio-card">
+        <h3>관심 분야</h3>
+        <p>관심 분야와 선택 이유가 들어갈 공간입니다.</p>
+      </article>
+
+      <article class="portfolio-card">
+        <h3>학습 계획</h3>
+        <p>학습 목표와 실행 계획이 들어갈 공간입니다.</p>
+      </article>
+    </div>
+  <nav class="section-navigation" aria-label="학습 계획 다음 이동">
     <a href="#intro">처음으로 ↑</a>
   </nav>
   </section>
