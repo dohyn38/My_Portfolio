@@ -680,3 +680,21 @@ body:has(.portfolio-home) .header button:focus-visible {
   background: #f7f5f2;
   border-top: 1px solid #eee9e3;
 }
+
+/* 홈과 About Me의 부드러운 저녁 하늘 배경 */
+.portfolio-home.dusk-home {
+  background: linear-gradient(180deg, #eef0f7 0%, #f0e8ef 38%, #f5e5df 68%, #f8eee5 100%);
+}
+:root[data-theme="dark"] .portfolio-home.dusk-home {
+  background: linear-gradient(180deg, #171e28 0%, #1d252e 38%, #252c30 68%, #35332f 100%);
+}
+.portfolio-home.dusk-home .hero.editorial-hero,
+:root:not([data-theme="dark"]) .portfolio-home.dusk-home #projects,
+:root[data-theme="dark"] .portfolio-home.dusk-home #projects,
+.portfolio-home.portfolio-about.dusk-home #about,
+.portfolio-home.portfolio-about.dusk-home #goals {
+  background: transparent;
+}
+.portfolio-home.dusk-home #projects {
+  border-top: 1px solid var(--portfolio-border);
+}
