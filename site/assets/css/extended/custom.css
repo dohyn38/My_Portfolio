@@ -633,3 +633,30 @@ body:has(.portfolio-home) .header button:focus-visible {
     padding-bottom: 48px;
   }
 }
+
+/* About Me 단독 페이지 */
+.portfolio-about #about { padding-top: 64px; }
+.portfolio-about .about-home-link {
+  margin-top: 0;
+  padding: 0 max(24px, calc((100% - 1080px) / 2)) 56px;
+}
+.portfolio-about .section-navigation a {
+  padding: 8px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--portfolio-muted);
+  text-decoration: none;
+}
+.portfolio-about .section-navigation a:hover {
+  color: var(--portfolio-text);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.portfolio-about .section-navigation a:focus-visible {
+  outline: 2px solid var(--portfolio-text);
+  outline-offset: 4px;
+}
+@media (max-width: 600px) {
+  .portfolio-about #about { padding-top: 40px; }
+}

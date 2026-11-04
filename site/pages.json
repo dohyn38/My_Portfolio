@@ -25,23 +25,10 @@
     "template"
   ],
   "title": "DOHYEON / PORTFOLIO",
-  "menu" :{
+  "menu": {
     "main": [
-      {
-        "name": "ABOUT ME",
-        "url": "/#about",
-        "weight": 10
-      },
-      {
-        "name": "INTERESTS & GOALS",
-        "url": "/#goals",
-        "weight": 20
-      },
-      {
-        "name": "PROJECTS",
-        "url": "/#projects",
-        "weight": 30
-      }
+      { "name": "Projects", "url": "/#projects", "weight": 10 },
+      { "name": "About Me", "url": "/about/", "weight": 20 }
     ]
   },
   "params": {
