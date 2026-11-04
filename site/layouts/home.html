@@ -1,12 +1,15 @@
 {{ define "main" }}
 <div class="portfolio-home">
 
-  <section id="intro" class="portfolio-section hero"
-           style="--hero-image: url('{{ "images/hero-bg.jpg" | relURL }}');"
+  <section id="intro" class="portfolio-section hero editorial-hero"
            tabindex="-1" aria-labelledby="intro-title">
-    <h1 id="intro-title">김도현 포트폴리오</h1>
-    <p>배우고, 만들고, 기록합니다.</p>
-    <a href="#about">더 알아보기 ↓</a>
+    <p class="hero-kicker">김도현 · JBNU · Computer Science</p>
+    <h1 id="intro-title">연결을 이해하고,<br><em>코드로 구현합니다.</em></h1>
+    <p class="hero-summary">배우고 만들고 기록하는 김도현의 포트폴리오 사이트입니다.</p>
+    <nav class="hero-actions" aria-label="포트폴리오 탐색">
+      <a href="#projects">프로젝트 살펴보기 ↓</a>
+      <a href="#about">About Me →</a>
+    </nav>
   </section>
 
   <section id="about" class="portfolio-section"

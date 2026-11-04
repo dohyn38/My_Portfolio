@@ -563,3 +563,73 @@ body:has(.portfolio-home) .header button:focus-visible {
     max-width: 360px;
   }
 }
+
+/* 텍스트 중심 첫 화면 */
+.portfolio-home .hero.editorial-hero {
+  display: block;
+  min-height: 0;
+  padding-top: 72px;
+  padding-bottom: 76px;
+  background: var(--portfolio-bg);
+  color: var(--portfolio-text);
+  text-align: left;
+}
+.portfolio-home .editorial-hero .hero-kicker {
+  margin-bottom: 36px;
+  color: var(--portfolio-muted);
+  font-size: 14px;
+}
+.portfolio-home .editorial-hero h1 {
+  max-width: 100%;
+  margin: 0 0 24px;
+  color: var(--portfolio-text);
+  font-size: clamp(34px, 6.4vw, 82px);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1.18;
+  text-shadow: none;
+}
+.portfolio-home .editorial-hero h1 em {
+  color: #b74427;
+  font-style: normal;
+}
+:root[data-theme="dark"] .portfolio-home .editorial-hero h1 em {
+  color: #ff9c74;
+}
+.portfolio-home .editorial-hero .hero-summary {
+  max-width: 680px;
+  color: var(--portfolio-muted);
+  font-size: clamp(16px, 1.8vw, 20px);
+  line-height: 1.8;
+}
+.portfolio-home .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+  margin-top: 30px;
+}
+.portfolio-home .editorial-hero .hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--portfolio-muted);
+  background: transparent;
+  color: var(--portfolio-text);
+  font-size: 15px;
+  text-decoration: none;
+}
+.portfolio-home .editorial-hero .hero-actions a:hover {
+  color: var(--portfolio-accent);
+  background: transparent;
+}
+.portfolio-home .editorial-hero .hero-actions a:focus-visible {
+  outline-color: var(--portfolio-text);
+}
+@media (max-width: 600px) {
+  .portfolio-home .hero.editorial-hero {
+    padding-top: 44px;
+    padding-bottom: 48px;
+  }
+}
