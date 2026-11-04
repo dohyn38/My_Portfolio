@@ -34,7 +34,7 @@
   "params": {
     "defaultTheme": "dark",
     "assets": {
-      "favicon": "favicon.svg"
+      "favicon": "favicon-photo.png"
     }
   }
 }

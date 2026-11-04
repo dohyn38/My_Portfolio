@@ -792,3 +792,134 @@ body:has(.portfolio-home) .header button:focus-visible {
   outline-offset: 3px;
 }
 @media (max-width: 600px) { .portfolio-home .hero-identity { margin-bottom: 32px; } }
+
+/* 관심과 학습 계획은 카드 없이 본문 흐름으로 배치 */
+.portfolio-about .about-learning-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 900px;
+}
+.portfolio-about .about-learning-block {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.portfolio-about .about-learning-block h3 { margin-bottom: 16px; }
+.portfolio-about .about-learning-block p {
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+/* 프로젝트 상세 화면에도 같은 모드별 그라데이션 적용 */
+body:has(.project-detail) {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef0f7 0%, #f0e8ef 38%, #f5e5df 68%, #f8eee5 100%);
+}
+:root[data-theme="dark"] body:has(.project-detail) {
+  background: linear-gradient(180deg, #171e28 0%, #1d252e 38%, #252c30 68%, #35332f 100%);
+}
+body:has(.project-detail) .main {
+  background: transparent;
+}
+
+/* 역량 및 사용 기술 표 */
+.portfolio-about .about-skills-table-wrap { width: 100%; }
+.portfolio-about table.about-skills-table {
+  display: table; width: 100%; margin: 0;
+  border-collapse: collapse; table-layout: fixed;
+  background: transparent; font-size: 15px;
+}
+.portfolio-about .about-skills-table th,
+.portfolio-about .about-skills-table td {
+  padding: 20px 16px; text-align: left; vertical-align: top;
+  border: 0; border-bottom: 1px solid var(--portfolio-border);
+  line-height: 1.85; overflow-wrap: anywhere;
+}
+.portfolio-about .about-skills-table thead th {
+  color: var(--portfolio-text); background: var(--portfolio-section-bg);
+  font-weight: 700;
+}
+.portfolio-about .about-skills-table th:first-child { width: 30%; }
+.portfolio-about .about-skills-table tbody th { color: var(--portfolio-text); font-weight: 600; }
+.portfolio-about .about-skills-table td { color: var(--portfolio-muted); }
+@media (max-width: 600px) {
+  .portfolio-about .about-skills-table th,
+  .portfolio-about .about-skills-table td { padding: 14px 10px; font-size: 14px; }
+  .portfolio-about .about-skills-table th:first-child { width: 34%; }
+}
+
+/* About Me 전용 목차: 본문 옆에 공간을 확보해 겹침 방지 */
+.portfolio-about .about-page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 40px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0 40px;
+  align-items: start;
+}
+.portfolio-about .about-page-content { min-width: 0; }
+.portfolio-about .about-page-content > .portfolio-section { padding: 64px 0; }
+.portfolio-about .about-page-content .about-home-link { padding: 24px 0 56px; }
+.portfolio-about .about-toc-sidebar { align-self: stretch; padding-top: 64px; padding-bottom: 48px; }
+.portfolio-about .about-toc {
+  position: sticky; top: 96px;
+  padding: 24px 20px;
+  background: var(--portfolio-card);
+  border: 1px solid var(--portfolio-border);
+  border-radius: 18px;
+  box-shadow: 0 8px 28px #0000000a;
+}
+.portfolio-about .about-toc-label { margin: 0 0 8px; color: var(--portfolio-muted); font-size: 11px; letter-spacing: .12em; }
+.portfolio-about .about-toc h2 { margin: 0 0 16px; font-size: 18px; }
+.portfolio-about .about-toc ol { list-style: none; padding: 0; margin: 0; }
+.portfolio-about .about-toc li + li { margin-top: 6px; }
+.portfolio-about .about-toc a {
+  display: block; padding: 10px 12px; border-radius: 8px;
+  color: var(--portfolio-muted); font-size: 14px; line-height: 1.6;
+  white-space: nowrap;
+  text-decoration: none; transition: background .2s, color .2s;
+}
+.portfolio-about .about-toc a:hover { color: var(--portfolio-text); background: var(--portfolio-section-bg); }
+.portfolio-about .about-toc a[aria-current="location"] { color: var(--portfolio-text); background: var(--portfolio-section-bg); font-weight: 700; box-shadow: inset 3px 0 #f47742; }
+.portfolio-about .about-toc a:focus-visible { outline: 2px solid #f47742; outline-offset: 3px; }
+.portfolio-about #learning-plan { scroll-margin-top: 100px; }
+@media (max-width: 1000px) {
+  .portfolio-about .about-page-layout { grid-template-columns: minmax(0, 1fr); gap: 0; padding: 0 24px; }
+  .portfolio-about .about-toc-sidebar { grid-row: 1; padding: 24px 0 0; }
+  .portfolio-about .about-toc { position: static; padding: 18px; }
+  .portfolio-about .about-toc ol { display: flex; flex-wrap: wrap; gap: 6px; }
+  .portfolio-about .about-toc li + li { margin-top: 0; }
+  .portfolio-about .about-page-content > .portfolio-section { padding: 40px 0; }
+}
+
+/* 좌우에 같은 공간을 두어 본문 자체를 화면 중앙에 정렬 */
+@media (min-width: 1201px) {
+  .portfolio-about .about-page-layout {
+    grid-template-columns: 260px minmax(0, 1080px) 260px;
+    justify-content: center;
+    gap: 24px;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .portfolio-about .about-page-content { grid-column: 2; grid-row: 1; }
+  .portfolio-about .about-toc-sidebar { grid-column: 3; grid-row: 1; }
+  .portfolio-about .about-toc { padding: 24px 14px; }
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .portfolio-about .about-page-layout {
+    grid-template-columns: minmax(0, 900px);
+    justify-content: center;
+    gap: 0;
+    padding: 0 24px;
+  }
+  .portfolio-about .about-toc-sidebar { grid-row: 1; padding: 24px 0 0; }
+  .portfolio-about .about-toc { position: static; }
+  .portfolio-about .about-toc ol { display: flex; flex-wrap: wrap; gap: 6px; }
+  .portfolio-about .about-toc li + li { margin-top: 0; }
+}
