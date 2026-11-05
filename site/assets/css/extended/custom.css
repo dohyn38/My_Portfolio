@@ -923,3 +923,103 @@ body:has(.project-detail) .main {
   .portfolio-about .about-toc ol { display: flex; flex-wrap: wrap; gap: 6px; }
   .portfolio-about .about-toc li + li { margin-top: 0; }
 }
+
+/* 활동 보고서의 구역별 색상과 오른쪽 목차 */
+body:has(.project-detail) .main { max-width: none; padding: 40px 28px; }
+.project-page-layout {
+  --report-accent: #a64e2c;
+  --report-line: #d9c9bf;
+  --report-tint: #ffffff52;
+  display: grid; grid-template-columns: minmax(0, 860px) 260px;
+  gap: 40px; max-width: 1160px; margin: 0 auto; align-items: start;
+}
+:root[data-theme="dark"] .project-page-layout {
+  --report-accent: #f6a375;
+  --report-line: #57616d;
+  --report-tint: #ffffff05;
+}
+.project-page-content { min-width: 0; }
+.project-detail .post-description { color: var(--secondary); line-height: 1.8; }
+.project-detail .project-report-section {
+  padding: 12px 0 36px; margin-bottom: 28px;
+  border-bottom: 1px solid var(--report-line);
+}
+.project-detail .project-report-section:last-child { border-bottom: 0; margin-bottom: 0; }
+.project-detail .project-report-section > h2 {
+  margin: 20px 0 28px; padding: 14px 18px;
+  border-left: 4px solid var(--report-accent);
+  border-radius: 0 10px 10px 0;
+  background: var(--report-tint); color: var(--report-accent);
+  font-size: clamp(23px, 3vw, 30px); line-height: 1.5;
+  scroll-margin-top: 100px;
+}
+.project-detail .post-content h3 { margin-top: 32px; padding-bottom: 10px; border-bottom: 1px solid var(--report-line); font-size: 21px; }
+.project-detail .post-content p { line-height: 1.95; }
+.project-detail .post-content table { font-size: 15px; line-height: 1.8; }
+.project-detail .post-content th { background: var(--report-tint); color: var(--report-accent); }
+.project-detail .post-content td, .project-detail .post-content th { padding: 14px; border-color: var(--report-line); }
+.project-detail .post-content img { display: block; max-width: 100%; height: auto; margin: 28px auto; border: 1px solid var(--report-line); border-radius: 12px; }
+.project-detail .post-content a { color: var(--report-accent); text-underline-offset: 4px; }
+.project-toc-sidebar { align-self: stretch; }
+.project-toc {
+  position: sticky; top: 96px; padding: 24px 16px;
+  background: var(--entry); border: 1px solid var(--report-line);
+  border-radius: 18px; box-shadow: 0 8px 28px #0000000a;
+}
+.project-toc-label { margin: 0 0 8px; color: var(--secondary); font-size: 11px; letter-spacing: .12em; }
+.project-toc h2 { margin: 0 0 18px; font-size: 18px; }
+.project-toc ol { list-style: none; padding: 0; margin: 0; }
+.project-toc li + li { border-top: 1px solid var(--report-line); margin-top: 6px; padding-top: 6px; }
+.project-toc a { display: block; padding: 10px 12px; color: var(--secondary); font-size: 14px; line-height: 1.6; border-radius: 8px; }
+.project-toc a:hover { color: var(--primary); background: var(--code-bg); }
+.project-toc a[aria-current="location"] { color: var(--report-accent); background: var(--code-bg); box-shadow: inset 3px 0 var(--report-accent); font-weight: 700; }
+.project-toc a:focus-visible { outline: 2px solid var(--report-accent); outline-offset: 3px; }
+@media (max-width: 1100px) {
+  .project-page-layout { grid-template-columns: minmax(0, 860px); justify-content: center; gap: 28px; }
+  .project-toc-sidebar { grid-row: 1; }
+  .project-toc { position: static; padding: 18px; }
+  .project-toc ol { display: flex; flex-wrap: wrap; gap: 6px; }
+  .project-toc li + li { border: 0; padding-top: 0; margin-top: 0; }
+}
+@media (max-width: 600px) {
+  body:has(.project-detail) .main { padding: 24px 20px; }
+  .project-detail .post-content td, .project-detail .post-content th { padding: 10px; }
+}
+
+/* 본문과 동일한 제목 계층을 표시하는 활동 목차 */
+.project-toc { max-height: calc(100vh - 120px); overflow-y: auto; scrollbar-width: thin; }
+.project-toc ul { list-style: none; margin: 0; padding: 0; }
+.project-toc-tree > ul > li + li { border-top: 1px solid var(--report-line); margin-top: 8px; padding-top: 8px; }
+.project-toc-tree > ul > li > a { font-weight: 650; }
+.project-toc ul ul { margin: 4px 0 4px 10px; border-left: 1px solid var(--report-line); padding-left: 6px; }
+.project-toc ul ul li + li { border: 0; margin-top: 2px; padding-top: 0; }
+.project-toc ul ul a { font-size: 12px; padding: 7px 9px; }
+.project-detail .post-content h3 { scroll-margin-top: 110px; }
+@media (max-width: 1100px) {
+  .project-toc { max-height: 300px; }
+}
+
+/* 프로젝트 상세 첫 화면의 작은 요약 카드 */
+.project-summary-card {
+  display: flex; align-items: center; gap: 16px;
+  margin-bottom: 28px; padding: 18px 20px;
+  border: 1px solid var(--report-line); border-radius: 14px;
+  background: var(--report-tint);
+}
+.project-summary-icon {
+  display: grid; place-items: center; flex: 0 0 48px; height: 48px;
+  border-radius: 12px; background: var(--entry); color: var(--report-accent);
+  font-size: 17px; font-weight: 800;
+}
+.project-summary-copy { min-width: 0; flex: 1; }
+.project-summary-title { margin: 0; font-size: 16px; font-weight: 700; color: var(--primary); }
+.project-summary-meta { margin: 4px 0 8px; font-size: 12px; color: var(--secondary); }
+.project-summary-tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0; }
+.project-summary-tags li { padding: 2px 8px; border-radius: 6px; background: var(--code-bg); color: var(--secondary); font-size: 11px; }
+.project-summary-link { flex-shrink: 0; padding: 8px 0; font-size: 13px; color: var(--report-accent); }
+.project-summary-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.project-summary-link:focus-visible { outline: 2px solid var(--report-accent); outline-offset: 4px; }
+@media (max-width: 600px) {
+  .project-summary-card { flex-wrap: wrap; padding: 16px; gap: 12px; }
+  .project-summary-link { margin-left: 60px; }
+}

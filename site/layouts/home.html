@@ -39,31 +39,19 @@
     </p>
 
     <div class="portfolio-grid">
+      {{ with site.GetPage "projects/portfolio" }}
       <article class="portfolio-card">
-        {{ if fileExists "static/images/portfolio-preview.png" }}
-        <img class="project-preview"
-             src="{{ "images/portfolio-preview.png" | relURL }}"
-             alt="직접 제작한 포트폴리오 홈 화면"
-             loading="lazy"
-             decoding="async">
-        {{ end }}
-        <h3>활동 1</h3>
+        <p class="section-label">활동 1 / C++</p>
+        <h3>{{ .Title }}</h3>
         <div class="project-meta">
-          <span>활동 기간 입력 예정</span>
-          <span class="project-status">상태 입력 예정</span>
+          <span>2026.05 ~ 2026.06</span>
+          <span class="project-status">개인 프로젝트 · 완료</span>
         </div>
-        <p>실제 활동과 결과물이 들어갈 공간입니다.</p>
-
-        <a class="project-link"
-           href="{{ "projects/portfolio/" | relURL }}">
-          제작 과정 자세히 보기 →
-        </a>
-
-        <a class="project-link"
-           href="https://github.com/dohyn38/My_Portfolio">
-          프로젝트 코드 보기 →
-        </a>
+        <p>C++의 상속과 다형성을 활용해 학교 구성원을 관리하고, 파일에서 읽은 교수·학생 정보를 유형별로 출력하는 프로그램을 제작했습니다.</p>
+        <a class="project-link" href="{{ .RelPermalink }}">활동 보고서 자세히 보기 →</a>
+        <a class="project-link" href="{{ .Params.repository }}">프로젝트 코드 보기 →</a>
       </article>
+      {{ end }}
 
       <article class="portfolio-card">
         <h3>활동 2</h3>
