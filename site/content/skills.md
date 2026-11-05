@@ -1,6 +1,6 @@
 ---
 title: "역량과 적용 사례"
-draft: false
+draft: true
 ---
 
 ## 보유 역량

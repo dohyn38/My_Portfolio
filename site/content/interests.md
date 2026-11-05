@@ -1,6 +1,6 @@
 ---
 title: "관심 분야와 선택 이유"
-draft: false
+draft: true
 ---
 
 ## 관심 분야

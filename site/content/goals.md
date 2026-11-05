@@ -1,6 +1,6 @@
 ---
 title: "학습 목표와 실행 계획"
-draft: false
+draft: true
 ---
 
 ## 학습 목표
