@@ -53,14 +53,19 @@
       </article>
       {{ end }}
 
+      {{ with site.GetPage "projects/portfolio-website" }}
       <article class="portfolio-card">
-        <h3>활동 2</h3>
+        <p class="section-label">활동 2 / WEB</p>
+        <h3>{{ .Title }}</h3>
         <div class="project-meta">
-          <span>활동 기간 입력 예정</span>
-          <span class="project-status">상태 입력 예정</span>
+          <span>{{ .Params.period }}</span>
+          <span class="project-status">개인 프로젝트 · 개선 중</span>
         </div>
-        <p>추가 활동이 있을 때 사용할 공간입니다.</p>
+        <p>Hugo 기반 포트폴리오를 제작하며 페이지 구조, 다크 모드, 반응형 배치와 스크롤 목차를 구현하고 개선했습니다.</p>
+        <a class="project-link" href="{{ .RelPermalink }}">활동 보고서 자세히 보기 →</a>
+        <a class="project-link" href="{{ .Params.repository }}">프로젝트 코드 보기 →</a>
       </article>
+      {{ end }}
     </div>
   <nav class="section-navigation" aria-label="활동 이후 이동">
     <a href="{{ "about/" | relURL }}">About Me 보기 →</a>

@@ -34,7 +34,10 @@
   "params": {
     "defaultTheme": "dark",
     "assets": {
-      "favicon": "favicon-photo.png"
+      "favicon": "favicon-moon.png",
+      "favicon16x16": "favicon-moon-16.png",
+      "favicon32x32": "favicon-moon-32.png",
+      "apple_touch_icon": "apple-touch-moon.png"
     }
   }
 }

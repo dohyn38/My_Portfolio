@@ -5,7 +5,7 @@
 <article class="post-single project-detail">
   {{ with .Params.repository }}
   <aside class="project-summary-card" aria-label="프로젝트 요약">
-    <div class="project-summary-icon" aria-hidden="true">C++</div>
+    <div class="project-summary-icon" aria-hidden="true">{{ $.Params.projectIcon | default "C++" }}</div>
     <div class="project-summary-copy">
       <p class="project-summary-title">{{ $.Title }}</p>
       <p class="project-summary-meta">{{ $.Params.period }} · {{ $.Params.projectType }}</p>
